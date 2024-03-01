@@ -13,7 +13,7 @@ type MediaUploaderProps = {
     setImage: React.Dispatch<any>;
     image: any;
     publicId: string;
-    type: 'string';
+    type: string;
 }
 
 const MediaUploader = ({onValueChange, setImage, image, publicId, type} : MediaUploaderProps) => {
