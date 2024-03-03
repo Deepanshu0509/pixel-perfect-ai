@@ -155,8 +155,8 @@ const TransformationForm = ({ action, data = null, userId, type, creditBalance, 
                     [fieldName === 'prompt' ? 'prompt' : 'to']: value
                 }
             }))
-            return onChangeField(value);
-        }, 1000);
+        }, 1000)();
+        return onChangeField(value);
     }
 
     //Todo : Update credit fee or make it more dynamic
