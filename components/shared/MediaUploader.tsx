@@ -55,6 +55,7 @@ const MediaUploader = ({onValueChange, setImage, image, publicId, type} : MediaU
             resourceType: 'image',
         }}
         onSuccess={onUploadSuccessHandler}
+        onError={onUploadErrorHandler}
     >
     {({ open }) => (
         <div className='flex flex-col gap-4'>
