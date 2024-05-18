@@ -8,7 +8,7 @@ const UserSchema = new Schema({
     firstName: {type: String},
     lastName: {type: String},
     planId: {type: String, default: 1},
-    creditBalance: {type: Number, default: 10},
+    creditBalance: {type: Number, default: 3},
 });
 
 const User = mongoose.models?.User || mongoose.model('User', UserSchema);
